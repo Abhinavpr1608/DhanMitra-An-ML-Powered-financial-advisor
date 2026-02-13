@@ -1,0 +1,2 @@
+import React from "react";
+export default function Portfolio(){ return (<div className="bg-white p-6 rounded-2xl shadow"><h2 className="text-xl font-semibold mb-4">Portfolio</h2><p className="text-sm text-gray-500">Saved plans and performance will appear here.</p></div>); }

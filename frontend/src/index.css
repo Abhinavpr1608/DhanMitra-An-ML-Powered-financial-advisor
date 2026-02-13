@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Use Inter font loaded in index.html */
+:root {
+  --brand: #4f46e5;
+  --muted: #6b7280;
+}
+
+/* global font */
+body, input, button, select { font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+.container-max {
+  max-width: 1100px;
+}
+
+/* subtle card shadow */
+.card {
+  @apply bg-white rounded-2xl shadow-lg;
+}
+
+/* animated button */
+.btn-primary {
+  @apply bg-[color:var(--brand)] text-white px-4 py-2 rounded-2xl font-semibold shadow hover:brightness-95 transition;
+}
+
+/* subtle fade-in */
+.fade-in {
+  animation: fadeIn .35s ease both;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
